@@ -16,6 +16,10 @@
     "noEmit": true,
     "jsx": "react-jsx"
   },
-  "include": ["src"],
+  "include": [
+    "src",
+    "src/assets/mockMessages.ts",
+    "src/assets/mockUserDetails.ts"
+  ],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
