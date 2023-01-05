@@ -1,28 +1,21 @@
 {
   "name": "chat-app",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
+  "version": "1.0.0",
+  "description": "This app is a frontend implementation for a chat application, using mock data.",
+  "main": "index.js",
   "scripts": {
-    "dev": "vite",
-    "start": "npm run dev",
-    "build": "tsc && vite build",
-    "preview": "vite preview"
+    "build": "cd UI & npm run build && cd ../server && npm run build",
+    "dev": "cd server && npm run dev && cd ../UI && npm run dev ",
+    "install": "cd server && npm i && cd ../UI && npm i"
   },
-  "dependencies": {
-    "@types/express": "^4.17.15",
-    "@types/node": "^18.11.18",
-    "cors": "^2.8.5",
-    "express": "^4.18.2",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Josnon/chat-app.git"
   },
-  "devDependencies": {
-    "@types/react": "^18.0.24",
-    "@types/react-dom": "^18.0.8",
-    "@vitejs/plugin-react": "^2.2.0",
-    "sass": "^1.57.0",
-    "typescript": "^4.6.4",
-    "vite": "^3.2.3"
-  }
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Josnon/chat-app/issues"
+  },
+  "homepage": "https://github.com/Josnon/chat-app#readme"
 }

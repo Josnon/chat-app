@@ -28,7 +28,9 @@
         visibility: initial;
       }
 
-      .message-author, .message-likes, .message-like {
+      .message-author,
+      .message-likes,
+      .message-like {
         padding: 0 4px;
         cursor: pointer;
 
@@ -37,7 +39,8 @@
         }
       }
 
-      .message-likes, .message-like {
+      .message-likes,
+      .message-like {
         &:before {
           content: "⭐";
         }
@@ -70,18 +73,21 @@
 .popup {
   width: 400px;
   height: 440px;
-  background: lavenderblush;
+  background: rgba(39, 39, 39, 0.932);
   padding: 20px;
   position: fixed;
   top: 100px;
   left: calc(50% - 200px);
+  border-radius: 10px;
+  box-shadow: 0 0 10px 10px rgba(34, 34, 34, 0.411);
 
   .close {
     text-align: center;
     width: 1.4em;
     height: 1.4em;
+    margin-left: 1px;
     float: right;
-    background: rgba(59, 251, 211, 0.67);
+    background: rgba(161, 161, 161, 0.67);
     border-radius: 50%;
     cursor: pointer;
   }
